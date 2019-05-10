@@ -7,7 +7,7 @@ pipeline{
                 echo '-------------------------------------------------------------------------------------'
                 echo 'Building..........'
                 echo '-------------------------------------------------------------------------------------'
-                git 'https://github.com/RobsonAssis/Desafio-Indra'
+                git 'https://github.com/Nknz1/Zoom'
                 echo '-------------------------------------------------------------------------------------'
             }
         }
@@ -32,9 +32,9 @@ pipeline{
                echo 'Deploing........'
                echo '-------------------------------------------------------------------------------------'
                bat '''
-               cd Submarino
-               python -m Pyautomators -f json -o .//submarino.json
-               type submarino.json
+               cd Hello-world
+               python -m Pyautomators -f json -o .//face.json
+               type face.json
                '''
            }
         }
