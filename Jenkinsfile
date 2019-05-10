@@ -17,6 +17,10 @@ pipeline{
                 echo 'Testing..........'
                 echo '-------------------------------------------------------------------------------------'
                 bat '''
+                pip install python-jenkins
+                python -m pip install --upgrade pip
+                pip install virtualenv
+                virtualenv env
                 env//Scripts//activate
                 '''     
                 echo '-------------------------------------------------------------------------------------'
